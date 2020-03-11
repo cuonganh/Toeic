@@ -1,5 +1,7 @@
 # Software Design and Construction
 
+  Project: Website học Toeic
+
 - Java EE JSP Servlet
 - Hệ thống gồm 3 tác nhân: khách, học viên và admin
 - Khách: Tìm kiếm các thông tin liên quan, làm bài tập kĩ năng ( photo, short conversation, text completion...)
