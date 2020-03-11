@@ -1,5 +1,4 @@
-# 2019_2_PTTKPM_Group09
-Software Design and Construction
+# Software Design and Construction
 
 - Java EE JSP Servlet
 - Hệ thống gồm 3 tác nhân: khách, học viên và admin
