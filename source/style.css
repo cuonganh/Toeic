@@ -139,3 +139,41 @@ body, html {
 #Contact {background-color: blue;}
 #About {background-color: orange;}
 
+/*How To Create a Hoverable Sidenav ===========================================
+/* Style the links inside the sidenav */
+#mySidenav a {
+    position: absolute; /* Position them relative to the browser window */
+    left: -80px; /* Position them outside of the screen */
+    transition: 0.3s;
+    padding: 15px; 
+    width: 100px; 
+    text-decoration: none; 
+    font-size: 20px; 
+    color: white; 
+    border-radius: 0 5px 5px 0; 
+  }
+  
+  #mySidenav a:hover {
+    left: 0; /* On mouse-over, make the elements appear as they should */
+  }
+  
+  #home {
+    top: 320px;
+    background-color: #4CAF50;
+  }
+  
+  #new {
+    top: 380px;
+    background-color: #2196F3;
+  }
+  
+  #contact {
+    top: 440px;
+    background-color: #ee82ee;
+  }
+  
+  #about {
+    top: 500px;
+    background-color: #555;
+}
+
