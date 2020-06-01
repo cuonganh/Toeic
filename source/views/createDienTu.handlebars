@@ -1,0 +1,72 @@
+<h1>De Thi in a nutshell</h1>
+<h1>Điền Từ</h1>
+
+<form action="" method="post">
+    <div>
+        <div class="form-group row">
+            <label class="col-sm-2 col-form-label">Câu hỏi</label>
+            <div class="col-sm-10">
+                <input name="questionContent" type="text" class="form-control" placeholder="VD: My name _____ Hiếu (đừng có nhập full cả câu vào)">
+            </div>
+        </div>
+
+        <fieldset class="form-group">
+            <div class="row">
+                <legend class="col-form-label col-sm-2 pt-0">Câu trả lời</legend>
+                <div class="col-sm-10">
+                    <div class="form-check  ">
+                        <input class="form-check-input " type="radio" name="AnswerValue" value="A">
+                        <label class="form-check-label ">
+                            A
+                        </label>
+                        <div class="col-sm-10">
+                            <input name="AnswerAContent" class="form-control" type="text">
+                        </div>
+
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="AnswerValue" value="B">
+                        <label class="form-check-label">
+                            B
+                        </label>
+                        <div class="col-sm-10">
+                            <input name="AnswerBContent" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="AnswerValue" value="C">
+                        <label class="form-check-label">
+                            C
+                        </label>
+                        <div class="col-sm-10">
+                            <input name="AnswerCContent" class="form-control" type="text">
+                        </div>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="AnswerValue" value="D">
+                        <label class="form-check-label">
+                            D
+                        </label>
+                        <div class="col-sm-10">
+                            <input name="AnswerDContent" class="form-control" type="text">
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </fieldset>
+
+        <div class="form-group row">
+            <div class="col-sm-10">
+                <button onclick="myFunction()" type="submit" class="btn btn-primary">Gui</button>
+            </div>
+        </div>
+    </div>
+
+</form>
+
+<script>
+    function myFunction() {
+        alert("Đã cập nhật điền từ")
+    }
+</script>
