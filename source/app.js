@@ -1,6 +1,7 @@
 const express = require("express");
 const handlebars = require("express-handlebars");
 const mongoose = require("mongoose");
+const passport = require('passport');
 
 
 let app = express();
@@ -14,6 +15,11 @@ let userInfo = require("./routers/userInfo")
 let allUser = require("./routers/allUser")
 let userInfoWithID = require("./routers/userInfoWithID")
 require("./routers/passport");
+
+app.use(bodyParser.urlencoded({ extended: false }))
+
+app.use(passport.initialize());
+app.use(passport.session());
 
 
 app.engine("handlebars", handlebars({ defaultLayout: "main" }))
