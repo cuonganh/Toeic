@@ -40,11 +40,37 @@ const userScoreSchema = new Schema({
     })
 
 
+const tracnghiemSchema = new Schema({
+    tnQuestionContent: { type: String, required: true },
+    tnAnswer: {
+        tnAnswerValue: { type: String, require: true },
+        AnswerAContent: { type: String, required: true },
+        AnswerBContent: { type: String, required: true },
+        AnswerCContent: { type: String, required: true },
+        AnswerDContent: { type: String, required: true },
+    }
+})
+
+const dientuSchema = new Schema({
+    dtQuestionContent: { type: String, required: true },
+    dtAnswer: {
+        dtAnswerValue: { type: String, require: true },
+        AnswerAContent: { type: String, required: true },
+        AnswerBContent: { type: String, required: true },
+        AnswerCContent: { type: String, required: true },
+        AnswerDContent: { type: String, required: true },
+    }
+})
+
 
 var userInfo = mongoose.model("User", userSchema)
-
+var userScore = mongoose.model("userScore", userScoreSchema)
+var tracnghiem = mongoose.model("tracnghiem", tracnghiemSchema)
+var dientu = mongoose.model("dientu", dientuSchema)
 
 module.exports = {
     userInfo: userInfo,
-
+    userScore: userScore,
+    tracnghiem: tracnghiem,
+    dientu: dientu,
 }
