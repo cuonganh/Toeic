@@ -15,5 +15,9 @@
   "bugs": {
     "url": "https://github.com/cuonganh/Toeic/issues"
   },
-  "homepage": "https://github.com/cuonganh/Toeic#readme"
+  "homepage": "https://github.com/cuonganh/Toeic#readme",
+  "dependencies": {
+    "mongo": "^0.1.0",
+    "mongodb": "^3.5.8"
+  }
 }
