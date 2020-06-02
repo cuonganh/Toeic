@@ -1,0 +1,19 @@
+{
+  "name": "toeic",
+  "version": "1.0.0",
+  "description": "Website Toeic Test",
+  "main": "app.js",
+  "scripts": {
+    "test": "khong muon test gi ca"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cuonganh/Toeic.git"
+  },
+  "author": "cuonganh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cuonganh/Toeic/issues"
+  },
+  "homepage": "https://github.com/cuonganh/Toeic#readme"
+}
