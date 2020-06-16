@@ -29,6 +29,70 @@ var saveExam = (object, callback) => {
         })
 }
 
+var getAllExamsOfMath = (cb) => {
+    examsModel.find({ subject: "math" }, { name: 1, _id: 0, level: 1, id: 1 })
+        .exec((err, doc) => {
+            if (err) {
+                cb(err);
+                console.log('err');
+            } else {
+                cb(null, doc);
+                console.log('ok');
+            }
+        })
+}
+
+var getAllExamsOfPhy = (cb) => {
+    examsModel.find({ subject: "phy" }, { name: 1, _id: 0, level: 1 })
+        .exec((err, doc) => {
+            if (err) {
+                cb(err);
+                console.log('err');
+            } else {
+                cb(null, doc);
+                console.log('ok');
+            }
+        })
+}
+
+var getAllExamsOfChem = (cb) => {
+    examsModel.find({ subject: "chem" }, { name: 1, _id: 0, level: 1 })
+        .exec((err, doc) => {
+            if (err) {
+                cb(err);
+                console.log('err');
+            } else {
+                cb(null, doc);
+                console.log('ok');
+            }
+        })
+}
+
+var getAllExamsOfBio = (cb) => {
+    examsModel.find({ subject: "bio" }, { name: 1, _id: 0, level: 1 })
+        .exec((err, doc) => {
+            if (err) {
+                cb(err);
+                console.log('err');
+            } else {
+                cb(null, doc);
+                console.log('ok');
+            }
+        })
+}
+
+var getAllExamsOfEng = (cb) => {
+    examsModel.find({ subject: "eng" }, { name: 1, _id: 0, level: 1 })
+        .exec((err, doc) => {
+            if (err) {
+                cb(err);
+                console.log('err');
+            } else {
+                cb(null, doc);
+                console.log('ok');
+            }
+        })
+}
 
 var compareAnswer = (answerUser, examName, cb) => {
     examsModel.findOne({ name: examName })
@@ -72,6 +136,11 @@ var getExamByName = (examName, cb) => {
 
 module.exports = {
     saveExam,
+    getAllExamsOfMath,
+    getAllExamsOfPhy,
+    getAllExamsOfChem,
+    getAllExamsOfBio,
+    getAllExamsOfEng,
     compareAnswer,
     getExamByName
 }
