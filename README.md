@@ -19,7 +19,7 @@ Run the commands below
 
 $ npm install node-gyp 
 $ npm install 
-$ mongod 
+$ mongodb 
 $ node app.js
 ```
 
